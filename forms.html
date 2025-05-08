@@ -1,42 +1,95 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>Forms</title>
+    <title>Login Form</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        form {
+            background-color: #ffe5b4; /* light orange */
+            color: #000;
+            width: 350px;
+            margin: 40px auto;
+            padding: 20px 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            width: 100%;
+            background-color: #ff7f50; /* coral */
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff6347; /* tomato */
+        }
+    </style>
 </head>
 <body>
     <h3>Login Form</h3>
     <form>
         <label>Name:</label>
         <input type="text" required>
-        <br><br>
 
         <label>Email:</label>
         <input type="email" required>
-        <br><br>
 
-        <label>Pasword:</label>
+        <label>Password:</label>
         <input type="password" required>
-        <br><br>
 
         <label>City:</label>
         <select>
             <option>Pune</option>
             <option>Mumbai</option>
-            <option>Banglore</option>
+            <option>Bangalore</option>
         </select>
-        <br><br>
 
         <label>Gender:</label>
-        <input type="radio" name="gender">Male
-        <input type="radio" name="gender">Female
-        <input type="radio" name="gender">Other
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
 
-        <br><br>
-
-        <label>Upload Marksheet: </label>
+        <label>Upload Marksheet:</label>
         <input type="file">
 
-        <br><br>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
