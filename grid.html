@@ -1,4 +1,7 @@
 <style>
+    body {
+        margin: 0px
+    }
     p {
         border: 2px solid red;
         padding: 10px;
@@ -9,7 +12,15 @@
         border: 2px solid blue;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        padding: 5px;
+        padding: 5px;gap: 5px;
+        height: 100vh;
+    }
+
+    @media(max-width:380px){
+        div {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
     }
 </style>
 <body>
