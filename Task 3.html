@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Task 3</title>
+</head>
+<body>
+    <input id = 'inp'>
+    <button id = 'additem'>Add Item</button>
+    <button id = 'removeitem'>Remove Item</button>
+
+    <ul id = 'unlist'></ul>
+
+    <script>
+        var add = document.getElementById('additem');
+        var remove = document.getElementById('removeitem');
+        add.addEventListener('click',()=>{
+            var newele = document.createElement('li');
+            newele.textContent = document.getElementById('inp').value;
+            var list = document.getElementById('unlist');
+            list.appendChild(newele);
+
+        })
+    </script>
+</body>
+</html>
