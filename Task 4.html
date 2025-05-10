@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <button id ='btn'>Click</button>
+    <script>
+       document.getElementById('btn').addEventListener('click',()=>{
+        var newele = document.createElement('h1');
+        newele.textContent = 'KLE College';
+        console.log(newele);
+        document.body.appendChild(newele);
+
+        
+       })
+    </script>
+</body>
+</html>
