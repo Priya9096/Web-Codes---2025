@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>My Greet Website</title>
+</head>
+<body>
+    <button id ='btn'>Greet</button>
+    <h1 id="msg"></h1>
+
+    <script>
+        var target = document.getElementById('btn');
+        target.addEventListener('click',()=>{
+            var heading = document.getElementById('msg');
+            heading.textContent = "Hello KLE Students"
+        })
+    </script>
+</body>
+</html>
