@@ -1,7 +1,11 @@
 <!--The variable declared using var can be 
 accessed inside the same function anywhere.
 Thats why var declared variables are function
-scoped.-->
+scoped.
+
+The variables which are declared using let
+has block scope means in the same block we can access it.
+Outside the block we cannot access let declared variables.-->
 <script>
     function greet(){
         var name = 'Priya';
@@ -12,4 +16,17 @@ scoped.-->
     }
     console.log(name);// Not accessible
     greet()
+
+
+
+
+
+    function welcome(){
+        {
+            let name = 'Pooja';
+            console.log(name);
+        }
+        console.log(name);
+    }
+    welcome();
 </script>
