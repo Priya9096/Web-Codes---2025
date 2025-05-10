@@ -1,0 +1,15 @@
+<!--The variable declared using var can be 
+accessed inside the same function anywhere.
+Thats why var declared variables are function
+scoped.-->
+<script>
+    function greet(){
+        var name = 'Priya';
+        {
+            console.log(name);//accessible
+        }
+        console.log(name);//accessible
+    }
+    console.log(name);// Not accessible
+    greet()
+</script>
