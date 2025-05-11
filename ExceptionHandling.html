@@ -1,0 +1,23 @@
+<!--
+1.Error Handling is the process in which developers will keep
+the logic in try block in which they might get an error.
+
+2. IF we get an error in the Logic which is present in 
+try block then respective catch block will be executed.
+
+3.Error Handling is required to avoid sudden Termination of
+Code.-->
+<script>
+   function add(a,b){
+    try{
+        console.log(a+c); // c is not defined
+    }
+    catch{
+        console.log('Cannot perform Addition');
+    }
+
+   }
+
+   add(10,20);
+   console.log('Other Taks');
+</script>
