@@ -1,0 +1,24 @@
+<!--
+1.Promises are used to handle asynchronous Tasks.
+2.Asynchronous tasks are such tasks where next instruction
+wont wait for previous instruction to complete rather
+all tasks will be executed parallely.
+3.Promises has 3 states(Pending, resolved, rejected)
+4.If Promise is under resolve state then then() will be called.
+5.If Promise is under reject state then catch() will be
+called. 
+-->
+
+<script>
+    let p1 = new Promise(function(resolve,reject){
+        setTimeout(()=>{
+            console.log('Fetching the Weather Data');
+            reject('Facing issue to fetch current Data');
+        },6000)
+    })
+
+    p1
+    .then((data)=>console.log("Todays Weather Condition:",data))
+    .catch((error)=>console.log(error))
+    console.log('Some Other Tasks');
+</script>
