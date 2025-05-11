@@ -1,0 +1,15 @@
+<script>
+    let p1 = new Promise(function(resolve,reject){
+        setTimeout(()=>{
+            console.log('Task 2');
+        },8000)
+    })
+
+    async function process(){
+        console.log('Task 1');
+        await p1;
+        console.log('Task 3 Depends on Task 2');
+    }
+    process();
+    console.log('Some other Tasks');
+</script>
